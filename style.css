@@ -44,3 +44,25 @@ section {
 /* Header styles */
 h1, h2 {
     color: #333;
+    body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ball:hover {
+  transform: scale(1.1);
+}
+
