@@ -41,10 +41,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styles */
-h1, h2 {
-    color: #333;
-    body {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,10 +56,19 @@ h1, h2 {
   background-color: #3498db;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 .ball:hover {
+  animation: none; /* Disable the bounce animation on hover */
   transform: scale(1.1);
 }
-
